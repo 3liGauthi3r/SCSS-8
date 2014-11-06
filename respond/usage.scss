@@ -1,0 +1,23 @@
+// 
+// Examples of usage
+// --------------------------------------------------
+
+
+#header{
+  height:100px;
+  @include breakpoint($tablet){
+    height:50px;
+  }
+  @include breakpoint($mobile){
+    height:auto;
+  }
+  .logo{
+    display:block;
+    @include breakpoint($tablet){
+        display:inline-block;
+        @include breakpoint($retina){
+        display:none;
+    }
+    }
+  }
+}

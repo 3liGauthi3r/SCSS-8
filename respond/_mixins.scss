@@ -1,0 +1,16 @@
+//
+// Mixins
+// --------------------------------------------------
+
+@mixin breakpoint($rule){
+  @if ($rule == $retina or $rule == $retina-hd){
+    @media only screen and ( min-resolution : #{$retina*96} ), ( -webkit-min-device-pixel-ratio : #{$retina} ){
+     @content;
+    }
+  }
+  @else{
+    @media only screen and (max-width: #{$rule}){
+     @content;
+    }  
+  }
+}
