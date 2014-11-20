@@ -1,0 +1,25 @@
+{
+  "name": "respond",
+  "version": "0.0.1",
+  "description": "respond SCSS plugin",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "media",
+    "quries"
+  ],
+  "authors": [
+    "me"
+  ],
+  "license": "y",
+  "homepage": "localhost",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
